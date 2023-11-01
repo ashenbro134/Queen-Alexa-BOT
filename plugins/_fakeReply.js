@@ -9,12 +9,12 @@ export async function before(m,{conn }) {
    global.rpl = { contextInfo: { externalAdReply: { mediaUrl: dygp, mediaType: 'VIDEO', description: 'support group', title: packname, body: 'grupo de soporte', thumbnailUrl: pp, sourceUrl: dygp }}} 
 	
 	//reply link PayPal
-    global.rpyp = { contextInfo: { externalAdReply: { mediaUrl: fgpyp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'ayuda a mantener el bot activo', thumbnailUrl: pp, sourceUrl: fgpyp }}}
+    global.rpyp = { contextInfo: { externalAdReply: { mediaUrl: alexapyp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'ayuda a mantener el bot activo', thumbnailUrl: pp, sourceUrl: fgpyp }}}
     
     //reply Instagram 
-    global.rpig = { contextInfo: { externalAdReply: { mediaUrl: fgig, mediaType: 'VIDEO', description: 'Sigueme por Instagram', title: 'FG98', body: 'sigueme por Instagram', thumbnailUrl: pp, sourceUrl: fgig }}} 
+    global.rpig = { contextInfo: { externalAdReply: { mediaUrl: alexaig, mediaType: 'VIDEO', description: 'Sigueme por Instagram', title: 'Alexa', body: 'sigueme por Instagram', thumbnailUrl: pp, sourceUrl: fgig }}} 
 	
 	//reply link yt
-    global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribete : ' + fgyt, title: 'FG YouTube', body: 'aprende a crear tus propios bots', thumbnailUrl: pp, sourceUrl: fgyt }}}
+    global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: alexayt, mediaType: 'VIDEO', description: 'Suscribete : ' + alexayt, title: 'Alexa YouTube', body: 'learn to create your own bots.', thumbnailUrl: pp, sourceUrl: fgyt }}}
 
 }

@@ -2,34 +2,28 @@
 let handler = async (m, { conn }) => {
 
 m.reply(`
-≡  *DyLuxᴮᴼᵀ ┃ SUPPORT*
+💝 *ALEXA-SUPPORT* 💝
+ 
+ 💢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 𝗔𝗦𝗛𝗘𝗡
+
+💝𝗔𝗟𝗘𝗫𝗔 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 
+
+💢 https://chat.whatsapp.com/C4mcek6i7aE2P1iDcJpmoo
+
+☠𝗘𝗗𝗨𝗖𝗔𝗧𝗜𝗢𝗡 𝗚𝗥𝗢𝗨𝗣
+
+💢 https://chat.whatsapp.com/GWuZzzsT1t6AZ1mhJBsSAk
+
+ 🎀𝗘𝗗𝗨𝗖𝗔𝗧𝗜𝗢𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟
+ 
+💢 https://whatsapp.com/channel/0029VaEs83XDeOND581kGc3V
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-▢ Grupo *1*
-${dygp}
+☠𝗢𝗧𝗛𝗘𝗥𝗦☠
 
-▢ Grupo *2*
-https://chat.whatsapp.com/I7bvd8XCAOUHjgkHteqFC7
+💝𝗕𝗨𝗬 𝗔 𝗖𝗢𝗙𝗙𝗘
 
-▢ Grupo *NSFW* 🔞
-https://chat.whatsapp.com/F0JTTyZ3hsoL7OlU8TEpuH
-
-▢ 𝐌𝐘 - 𝐌𝐚𝐲𝐥𝐮𝐱 | ᴮᴼᵀ⚡
-https://chat.whatsapp.com/CTILZXSriIE3M40anVyPT4
-
-▢ 📲💻ANDROID WORLD🎬🎮
-https://chat.whatsapp.com/Ly4I2LObSvW8VgOnJjofgA
-
-◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-▢ Todos los Grupos
- https://instabio.cc/fg98ff
-
-▢ *Telegram*
-• https://t.me/fgawgp
- ▢ *PayPal*
-• https://paypal.me/fg98f
-▢ *YouTube*
-• https://www.youtube.com/fg98f`)
+🎫 https://www.buymeacoffee.com/queenalexa
 
 }
 handler.help = ['support']

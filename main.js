@@ -87,13 +87,13 @@ let { version, isLatest } = await fetchLatestBaileysVersion()
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['dylux-bot','Safari','1.0.0']
+  browser: ['Sakura-bot','Safari','0.0.1']
 }*/ 
 const connectionOptions = {
 	    version,
         printQRInTerminal: true,
         auth: state,
-        browser: ['QUEEN-ALEXA', 'Safari', '3.1.0'], 
+        browser: ['𝗤𝗨𝗘𝗘𝗡-𝗔𝗟𝗘𝗫𝗔', 'Safari', '0.0.1'], 
 	      patchMessageBeforeSending: (message) => {
                 const requiresPatch = !!(
                     message.buttonsMessage 
@@ -149,7 +149,7 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.cyan(`✅  Auto clear  | Se limpio la carpeta tmp`))
+	console.log(chalk.cyan(`✅  Autoclear | Cleaned the tmp folder`))
 }, 180000) //3 muntos
 
 async function connectionUpdate(update) {
@@ -193,14 +193,14 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Hola, @user\nBienvenido a @group'
-  conn.bye = 'adiós @user'
-  conn.spromote = '@user promovió a admin'
-  conn.sdemote = '@user degradado'
-  conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
-  conn.sSubject = 'El nombre del grupo ha sido cambiado a \n@group'
-  conn.sIcon = 'El icono del grupo ha sido cambiado'
-  conn.sRevoke = 'El enlace del grupo ha sido cambiado a \n@revoke'
+  conn.welcome = '┏━━━━━━❍\nHELLO👋, @user\n💝WELCOME TO @group\n┗━━━━━━━━❍'
+  conn.bye = '┏━━━━━━❍\nGOOD BYE @user\n┗━━━━━━━❍'
+  conn.spromote = '┏━━━━━━❍\n@user 💝You now a This Group admin\n┗━━━━━━❍'
+  conn.sdemote = '┏━━━━━━❍\n@user 💝You Are Not Now admin This Group\n┗━━━━━━━━❍ '
+  conn.sDesc = '┏━━━━━━❍\n💝Description has been changed to \n@desc\n┗━━━━━━❍'
+  conn.sSubject = '┏━━━━━❍\n💝The group name has been changed to\n@group\n┗━━━━━━❍'
+  conn.sIcon = '┏━━━━━❍\n💝The group icon has been changed\n┗━━━━━━━❍'
+  conn.sRevoke = '┏━━━━━━❍\n💝The group link has been changed to \n@revoke\n┗━━━━━━❍'
   conn.handler = handler.handler.bind(global.conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)

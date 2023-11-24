@@ -13,7 +13,7 @@ let handler = async (m, {conn, text }) => {
 ↳ 🫐 *_Link :_* ${v.url}
 ↳ 🕒 *_Duration :_* ${v.timestamp}
 ↳ 📥 *_Uploaded :_* ${v.ago}
-↳ 👁 *_Views :_* ${v.views}`}}).filter(v => v).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n')
+↳ 👁 *_Views :_* ${v.views}`}}).filter(v => v).join('\n\n💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖\n\n')
   conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m)
 }
 handler.help = ['ytsearch'] 

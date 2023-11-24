@@ -5,50 +5,47 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'main': 'ACERCA DE',
-  'game': 'JUEGOS',
-  'econ': 'NIVEL & ECONOMIA',
-  'rg': 'REGISTRO',
-  'sticker': 'STICKER',
-  'img': 'IMAGEN',
-  'maker': 'MAKER',
-  'prem': 'PREMIUM',
-  'group': 'GRUPO',
-  'nable': 'EN/DISABLE OPCIONES', 
-  'nime': 'ANIME',
-  'rnime': 'ANIME REACCION',
-  'dl': 'DESCARGAS',
-  'tools': 'TOOLS',
-  'fun': 'FUN',
-  'cmd': 'DATABASE',
-  'nsfw': 'NSFW +18', 
-  'ansfw': 'NSFW ANIME',
-  'owner': 'OWNER', 
-  'advanced': 'AVANZADO',
+  'main': '💝 *BOT-DETAILS* 💝',
+  'game': '🎮 *GAMES-MENU* 🎮 ',
+  'econ': '💵 *WALLET* 💶',
+  'rg': '💖 *REGISTOR* 💖',
+  'sticker': '🪀 *STICKER-MENU* 🪀',
+  'img': '🏷️ *IMAGE-MENU* 🏷️',
+  'maker': '🛠️ *MAKER-MENU* 🛠️',
+  'prem': '🤴 *PREMIUM-MENU* 🤴',
+  'group': '⚡ *GROUP-MENU* ⚡',
+  'nable': '🍭 *EN/DISABLE OPCIONES* 🍭', 
+  'nime': '🔱 *ANIME-MENU* 🔱',
+  'rnime': '🌿 *ANIME-REACCION* 🌿',
+  'dl': '📩 *DOWNLOAD-MENU* 📩',
+  'tools': '🍃 *TOOLS-MENU* 🍃',
+  'fun': '🌀 *FUN-MENU* 🌀',
+  'cmd': '🧬 *DATABASE-MENU* 🧬',
+  'nsfw': '❌ *NSFW +18* ❌', 
+  'ansfw': '❌ *NSFW-ANIME* ❌',
+  'owner': '👤 *OWNER-MENU* 👤', 
+  'advanced': '🧨 *ADD-MENU* 🧨',
 }
 const defaultMenu = {
   before: `
-◈ ━━━━━ *DyLux  ┃ ᴮᴼᵀ* ━━━━━ ◈
- 
-👋🏻 _Hola_ *%name*
-🧿 Nivel : *%level* 
-👥 Usuarios : %totalreg
-📈 Tiempo activo : %muptime
-─────────────
-▢ Crea tu propio bot 
-• https://youtu.be/xFqjKN1Qt80
-▢ Descarga *FGWhatsApp*
-• https://fgmods.xyz
-─────────────
-%readmore
-Ⓟ = Premium
-ⓓ = Diamantes
------  -----  -----  -----  -----
-  ≡ *LISTA DE MENUS*
+💖————————————————————————⊶  
+*💝💝QUEEN-ALEXA-BOT💝💝*
+💖————————————————————————⊶
+ 👋 *HI* : *%name*
+*THE BEST WHATSAPP BOT....*
+╭——————————————————————————————⊶
+╏ ☠ *Level*     : *%level* 
+╏ 😏 *Users*     : *%totalreg*
+╏ ⏳ *Run Time* : *%muptime*
+╏ 💝 *Bot Name* : *QUEEN-ALEXA*
+╏ 👩‍💻 *Creator*    : *AI-KILLER*
+╏ ⚡ *Nice To Meet You* *%name* 💝
+╰——————————————————————————————⊶
+┏━━❬ Qᴜᴇᴇɴ-ᴀʟᴇxᴀ-ᴄᴏᴍᴍᴀɴᴅ-ʟɪꜱᴛ ❭━━┓💝
 `.trimStart(),
-  header: '┌─⊷ *%category*',
-  body: '▢ %cmd %isdiamond %isPremium',
-  footer: '└───────────\n',
+  header: '╭━━━━✘ %category ✘━━✣',
+  body: '╏╏ 💖 *%cmd*',
+  footer: '╰━━━━━━━━━━━━━━──⊷\n',
   after: `
 `,
 }
@@ -113,7 +110,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
-    let after = conn.menu.after || (conn.user.jid == conn.user.jid ? '' : `Powered by https://wa.me/${conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let after = conn.menu.after || (conn.user.jid == conn.user.jid ? '' :'*The Queen-Alexa* https://wa.me/${conn.user.jid.split`@`[0]}`) + defaultMenu.after
     let _text = [
       before,
       ...Object.keys(tags).map(tag => {
@@ -121,8 +118,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%isdiamond/g, menu.diamond ? '(ⓓ)' : '')
-                .replace(/%isPremium/g, menu.premium ? '(Ⓟ)' : '')
+                .replace(/%isdiamond/g, menu.diamond ? '(♞)' : '')
+                .replace(/%isPremium/g, menu.premium ? '(♟)' : '')
                 .trim()
             }).join('\n')
           }),
@@ -158,16 +155,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
   
-    m.react('📚') 
+    m.react('💝') 
     
   } catch (e) {
-    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
+    conn.reply(m.chat, '❎  Sorry, the menu has an error', m)
     throw e
   }
 }
-handler.help = ['help']
+handler.help = ['allmenu']
 handler.tags = ['main']
-handler.command = ['menu', 'help', 'menú'] 
+handler.command = ['allmenu', 'fullcmd', 'alllist'] 
 handler.register = false
 
 handler.exp = 3
@@ -184,3 +181,4 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
 }
+

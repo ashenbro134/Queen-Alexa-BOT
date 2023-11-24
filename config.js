@@ -28,10 +28,10 @@ global.APIKeys = { // APIKey Here
 global.packname = '💝𝗤𝚄𝙴𝙴𝙽𝗔𝙻𝙴𝚇𝙰💝' 
 global.author = '@ashenbro134' 
 global.fgig = '▢ Sígueme en Instagram\nhttps://www.instagram.com/Alexa_ff\n' 
-global.dygp = 'https://chat.whatsapp.com/L341x6tZ2ix11je8QyCs0O'
+global.dygp = 'https://chat.whatsapp.com/C4mcek6i7aE2P1iDcJpmoo'
 global.fgsc = 'https://github.com/ashenbro134/Queen-Alexa-BOT' 
-global.fgyt = 'https://youtube.com/fg98f'
-global.fgpyp = 'https://paypal.me/Alexa'
+global.fgyt = 'https://youtube.com/ashenbro'
+global.fgpyp = '
 global.fglog = '___' 
 
 global.wait = '*⌛ _WAIT..._*\n*▰▰▰▱▱▱▱▱*'
